@@ -16,7 +16,6 @@ const connection = mysql.createConnection({
 	user: 'root',
 	password: 'password',
 	database: 'stories'
-	// port: 3001
 });
 
 connection.connect(function(err) {
@@ -24,11 +23,11 @@ connection.connect(function(err) {
 		console.error('error connecting: ' + err.stack);
 		return;
 	}
-
+	console.log('CONNECTED WOOHOOHOO');
 	console.log('connected as id ' + connection.threadId);
 });
 
-connection.end();
+// connection.end();
 
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
