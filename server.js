@@ -13,10 +13,10 @@ const app = express();
 const mysql = require('mysql');
 const connection = mysql.createConnection({
 	host: 'localhost',
-	user: 'me',
-	password: 'secret',
-	database: 'my_db',
-	port: 3001,
+	user: 'root',
+	password: 'password',
+	database: 'stories'
+	// port: 3001
 });
 
 connection.connect(function(err) {
