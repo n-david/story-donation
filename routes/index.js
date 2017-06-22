@@ -4,18 +4,11 @@ const connection = require('../db');
 
 /* GET users listing. */
 router.get('/stories', function(req, res, next) {
-	// Comment out this line:
-	//res.send('respond with a resource');
-
-	// And insert something like this instead:
-	res.json([
-		{
-			id: 1,
-			username: 'samsepi0l',
-		}, {
-			id: 2,
-			username: 'D0loresH4ze',
-		}]);
+	connection.query('SELECT * FROM stories', function(err, results) {
+		if (err) throw err;
+		// console.log(results);
+		res.json(results);
+	});
 });
 
 module.exports = router;
