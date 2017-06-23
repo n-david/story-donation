@@ -15,7 +15,7 @@ class App extends Component {
 	render() {
 		return (
 				<div className="App">
-					<h1>Donation Stories</h1>
+					<h1>Story donations</h1>
 					{this.state.stories.map(story =>
 							<div key={story.id}>
 								{story.name}, {story.description}, {story.photoURL}
