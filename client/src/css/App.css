@@ -5,6 +5,7 @@
 .story-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .story {
@@ -13,16 +14,6 @@
 }
 
 .story > .image {
-    width: 300px;
-}
-
-.story > .description {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.story > .name {
-    color: gray;
-    margin-top: 10px;
-    text-align: right;
+    width: 250px;
+    border-radius: 1000px;
 }
