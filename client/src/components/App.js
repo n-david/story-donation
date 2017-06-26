@@ -69,7 +69,7 @@ class App extends Component {
 								isOpen={this.state.modalIsOpen}
 								onRequestClose={this.closeModal}
 								style={customStyles}
-								contentLabel="Example Modal"
+								contentLabel="Expanded story"
 						>
 							{this.state.clickedStory !== null ? this.renderModal(
 									this.state.clickedStory) : null}
